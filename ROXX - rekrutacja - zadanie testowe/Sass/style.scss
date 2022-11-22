@@ -1,0 +1,776 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Cairo Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cairo Regular"), url("/fonts/Cairo-Regular.woff") format("woff");
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Cairo-Regular", Fallback, sans-serif;
+}
+.menu-hamburger-container {
+  display: none;
+}
+.main-box {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: auto;
+
+  font-family: "Cairo-Regular", Fallback, sans-serif;
+}
+.slider-1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  background: url(/images/fs/slider1@2x.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+  animation: slideShow 20s infinite;
+  transition: 1s;
+}
+@keyframes slideShow {
+  0% {
+    background: url(/images/fs/slider1@2x.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+  }
+  30% {
+    background: url(/images/fs/slider2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+  }
+  60% {
+    background: url(/images/fs/slider3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+  }
+  100% {
+    background: url(/images/fs/slider1@2x.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+  }
+}
+.rect-1 {
+  animation: slide-1 20s infinite;
+}
+.rect-2 {
+  animation: slide-2 20s infinite;
+}
+.rect-3 {
+  animation: slide-3 20s infinite;
+}
+@keyframes slide-1 {
+  0% {
+    background-color: #3369d3;
+  }
+  30% {
+    background-color: #ffffff;
+  }
+  60% {
+    background-color: #ffffff;
+  }
+  100% {
+    background-color: #3369d3;
+  }
+}
+@keyframes slide-2 {
+  0% {
+    background-color: #ffffff;
+  }
+  30% {
+    background-color: #3369d3;
+  }
+  60% {
+    background-color: #ffffff;
+  }
+  100% {
+    background-color: #ffffff;
+  }
+}
+@keyframes slide-3 {
+  0% {
+    background-color: #ffffff;
+  }
+  30% {
+    background-color: #ffffff;
+  }
+  60% {
+    background-color: #3369d3;
+  }
+  100% {
+    background-color: #ffffff;
+  }
+}
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 70%;
+  height: auto;
+  margin: 30px 0 0 0;
+  color: #ffffff;
+}
+.header-box-bottom {
+  display: inline-block;
+  text-align: right;
+  padding-top: 8px;
+  width: 95%;
+  border-top: 1px solid #707070;
+}
+.header-box-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  column-gap: 60px;
+  a {
+    transition: ease-in-out 0.5s;
+  }
+  a:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+  }
+}
+.text-container {
+  display: flex;
+  width: 70%;
+  height: 100%;
+  align-self: center;
+  color: #ffffff;
+}
+.text-box {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: center;
+  img {
+    width: 88px;
+    height: 44px;
+  }
+  .header-text {
+    font-size: 64px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  h4 {
+    font-family: "Roboto";
+  }
+}
+.menu-hamburger {
+  display: none;
+}
+.slider-bottom-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 286px;
+  width: 70%;
+  align-self: center;
+  align-items: center;
+  height: 15vh;
+  padding-bottom: 10vh;
+  .rect-box {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+  }
+  button {
+    color: #ffffff;
+    background-color: #3369d3;
+    border: 0px;
+    font-size: 18px;
+    padding: 2vh 5vh;
+    margin: 2vh 2vh;
+    a:hover {
+      color: #3369d3;
+      transition: linear 0.5s;
+    }
+  }
+  button:hover {
+    cursor: pointer;
+    background-color: #fff;
+
+    transition: linear 0.5s;
+  }
+}
+.rect {
+  display: block;
+  background-color: #ffffff;
+  width: 6.19vh;
+  height: 0.52vh;
+}
+.rect-toggle {
+  background-color: #3369d3;
+}
+
+.facts-1-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 16.1vh;
+  justify-content: center;
+  row-gap: 10vh;
+  width: 100%;
+  height: auto;
+  margin: 18.6vh 0;
+  .images-box {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    img:nth-of-type(1) {
+      padding: 31.5vh 0.8vh 0 8.2vh;
+      max-width: 33vh;
+      max-height: 33vh;
+    }
+    img:nth-of-type(2) {
+      padding: 0 0 9.3vh 0;
+      max-width: 55vh;
+      max-height: 55vh;
+    }
+  }
+  .facts-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    img {
+      width: 2.78vh;
+      height: 2.47vh;
+    }
+
+    .numered-facts-box {
+      display: flex;
+      max-width: 65.5vh;
+      flex-direction: row;
+      column-gap: 3.18vh;
+      row-gap: 6.2vh;
+      flex-wrap: wrap;
+      margin-top: 8vh;
+      .fact-nm-box {
+        width: 17.5vh;
+        display: flex;
+        flex-direction: column;
+        font-family: "Open Sans";
+        color: #4e4e4e;
+
+        p {
+          font-size: 14px;
+          line-height: 2.6vh;
+          border-top: 1px solid rgb(112, 112, 112, 0.25);
+
+          margin: 0;
+        }
+      }
+      .number {
+        display: block;
+        width: 100%;
+        font-size: 12px;
+        font-weight: bold;
+        padding-bottom: 1vh;
+        color: #000000;
+      }
+    }
+  }
+}
+.facts-2-container {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+  justify-content: center;
+  row-gap: 10vh;
+  width: 100%;
+  height: auto;
+  margin: 0 0 18.6vh 0;
+
+  .facts-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 53.1vh;
+    padding: 15vh 15.9vh 0 18.8vh;
+    img {
+      width: 5.8vh;
+      height: 2.06vh;
+    }
+
+    .lead {
+      margin: 4.64vh 0 3.1vh 0;
+    }
+    p {
+      color: #4e4e4e;
+      font-size: 14px;
+      line-height: 24px;
+      font-family: "Open Sans";
+    }
+  }
+  .images-box {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    img:nth-of-type(1) {
+      padding: 0 0 0 0;
+      max-width: 55vh;
+      max-height: 55vh;
+    }
+    img:nth-of-type(2) {
+      padding: 0 0.8vh 34vh 1vh;
+      max-width: 33vh;
+      max-height: 33vh;
+    }
+  }
+}
+.lead {
+  color: #707070;
+  font-size: 20px;
+  line-height: 32px;
+  font-family: "Open Sans";
+  font-weight: 300;
+}
+.facts-header {
+  color: #000000;
+  width: auto;
+  font-size: 36px;
+  padding: 2vh 0 0 0;
+  font-weight: 600;
+}
+.gallery {
+  width: 100%;
+  height: 65vh;
+  background: url(/images/fs/d_gallery@2x.png);
+  background-repeat: no-repeat;
+  background-size: 100% 65vh;
+}
+.test-drive-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  padding: 18.6vh 0;
+}
+.rect7-box {
+  display: flex;
+  position: relative;
+  background-color: #ffffff;
+  z-index: 999;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+  padding: 8vh;
+  .facts-header::after {
+    content: " BMW iX";
+    position: relative;
+    top: -1.5vh;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .lead {
+    margin: 1.54vh 0 9.29vh 0;
+  }
+  p {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .radio-box {
+    color: #707070;
+  }
+  .input-text {
+    margin-top: 3.1vh;
+    max-width: 58.22vh;
+    height: 5.37vh;
+    padding-left: 2.27vh;
+    font-size: 14px;
+    border: 1px solid #dcdcdc;
+    color: #4e4e4e;
+  }
+  button {
+    margin-top: 6.19vh;
+    width: 25.07vh;
+    height: 4.44vh;
+    background-color: #3369d3;
+    font-size: 18px;
+    color: #ffffff;
+    border: 0px;
+  }
+  button:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #3369d3;
+    transition: linear 0.5s;
+    border: 3px solid #3369d3;
+  }
+}
+
+.bmw-ix-img {
+  z-index: 2;
+  display: block;
+  position: relative;
+  left: 37vh;
+  top: 70vh;
+  width: 65.84vh;
+  height: 47.99vh;
+}
+.bmw-ix-img-2 {
+  z-index: 2;
+  display: block;
+  position: relative;
+  left: -27.5vh;
+  top: 24vh;
+  width: 68.42vh;
+  height: 47.99vh;
+}
+.footer {
+  background-color: #e6e6e6;
+  width: 100%;
+
+  height: auto;
+}
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  padding: 0 30.48vh;
+  p {
+    font-size: 20px;
+    color: #707070;
+    padding: 0 1.03vh 0 0;
+  }
+}
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  width: auto;
+  column-gap: 2.06vh;
+  border-bottom: 1px solid #707070;
+
+  img {
+    width: 3.3vh;
+    height: 3.3vh;
+    transition: transform ease-in-out 0.5s;
+  }
+  img:hover {
+    transform: translateY(-5px);
+  }
+}
+.footer-nav-box {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2.06vh 0 0 0;
+
+  ul {
+    max-width: 34.98vh;
+    list-style-type: none;
+    padding: 0;
+    color: #707070;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 28px;
+  }
+  a {
+    text-decoration: none;
+    color: #707070;
+  }
+}
+.footer-nav {
+  width: auto;
+  min-width: 40vh;
+}
+.popout {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background-color: rgba(1, 0, 2, 0.9);
+  h2 {
+    margin: 0;
+  }
+  h5 {
+    font-family: "Roboto";
+  }
+  button {
+    width: auto;
+    height: auto;
+    padding: 1.1vh 6.6vh;
+    background-color: #3369d3;
+    font-size: 14px;
+    color: #ffffff;
+    border: 0px;
+    font-weight: 600;
+  }
+  button:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #3369d3;
+    transition: linear 0.5s;
+    border: 3px solid #3369d3;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .slider-1 {
+    background: url(/images/mobile/slider1@2x.png);
+    background-size: 100% auto;
+    animation: slideShow 20s infinite;
+    transition: 1s;
+  }
+  @keyframes slideShow {
+    0% {
+      background: url(/images/mobile/slider1@2x.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100vh;
+    }
+    30% {
+      background: url(/images/mobile/slider2.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100vh;
+    }
+    60% {
+      background: url(/images/mobile/slider3.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100vh;
+    }
+    100% {
+      background: url(/images/mobile/slider1@2x.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100vh;
+    }
+  }
+  .menu-hamburger-container {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    z-index: 999;
+    font-family: "Cairo Regular";
+  }
+  .menu-hamburger-top-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    padding: 0vh;
+  }
+  .icon {
+    padding: 3vh;
+    height: 4.12vh;
+    width: 4.12vh;
+    margin-right: 2vh;
+  }
+  .x-mark {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: #858585;
+  }
+  .x-mark:hover {
+    cursor: pointer;
+  }
+
+  .menu-hamburger-col {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    .hamburger-border {
+      width: 100%;
+      border-bottom: 1px solid #343434;
+    }
+  }
+  .menu-hamburger-middle-box {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: fit-content;
+    align-self: center;
+    p {
+      padding: 2vh 0;
+      text-align: center;
+    }
+    p:hover {
+      cursor: pointer;
+    }
+    p:nth-of-type(2) {
+      border-top: 1px solid #343434;
+      border-bottom: 1px solid #343434;
+    }
+  }
+  button {
+    margin-top: 15vh;
+    width: 38.39vh;
+    height: 6.5vh;
+    color: #ffffff;
+    background-color: #3369d3;
+    border: 0px;
+    font-size: 14px;
+    padding: 0;
+    align-self: center;
+    a:hover {
+      color: #3369d3;
+      transition: linear 0.5s;
+    }
+  }
+  .slider-bottom-container {
+    flex-wrap: wrap-reverse;
+  }
+  .header-nav {
+    display: none;
+  }
+  .header-box-bottom {
+    display: none;
+  }
+  .menu-hamburger {
+    display: block;
+    width: 3.1vh;
+    height: 2.06vh;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+  }
+  .menu-hamburger::after {
+    content: "";
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    top: 0.9vh;
+  }
+  .slider-bottom-container {
+    justify-content: center;
+    button {
+      color: #ffffff;
+      background-color: #3369d3;
+      border: 0px;
+      font-size: 14px;
+      padding: 0;
+      margin: 0vh 0 9vh 0;
+    }
+  }
+
+  .text-box {
+    img {
+      width: 6.05vh;
+      height: 3.03vh;
+      margin-bottom: 5vh;
+    }
+    .header-text {
+      font-size: 48px;
+      font-weight: bold;
+      text-transform: none;
+      max-width: 30vh;
+    }
+    h4 {
+      font-size: 14px;
+      color: #d6d6d6;
+    }
+  }
+
+  .bmw-logo {
+    width: 4.12vh;
+    height: 4.12vh;
+  }
+  .facts-1-container {
+    margin: 10vh 0 0 0;
+    .facts-box {
+      margin: 0 3.51vh;
+      .numered-facts-box {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        .fact-nm-box {
+          width: auto;
+        }
+      }
+    }
+
+    .images-box {
+      img:nth-of-type(1) {
+        padding: 18vh 1.2vh 0 0;
+        max-width: 16vh;
+        max-height: 16vh;
+      }
+      img:nth-of-type(2) {
+        padding: 0 0 9.3vh 0;
+        max-width: 31.32vh;
+        max-height: 31.32vh;
+      }
+    }
+  }
+  .facts-2-container {
+    margin: 10vh 0 18.6vh 0;
+    .facts-box {
+      margin: 0 3.51vh;
+      padding: 0;
+    }
+    .images-box {
+      img:nth-of-type(1) {
+        padding: 4vh 0 0 0;
+        max-width: 31.31vh;
+        max-height: 31.31vh;
+      }
+      img:nth-of-type(2) {
+        padding: 0 0vh 14vh 1.2vh;
+        max-width: 16.06vh;
+        max-height: 16.06vh;
+      }
+    }
+  }
+  .gallery {
+    width: 100%;
+    height: 65vh;
+    background: url(/images/mobile/Group\ 57@2x.png);
+    background-repeat: no-repeat;
+    background-size: 100% 65vh;
+  }
+  .bmw-ix-img {
+    display: none;
+  }
+  .bmw-ix-img-2 {
+    display: none;
+  }
+  .rect7-box {
+    margin: 0 3.51vh;
+    position: static;
+    padding: 0;
+  }
+  .facts-header {
+    font-size: 24px;
+  }
+  .footer-box {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 3.51vh;
+    .social-icons {
+      flex-direction: column;
+      width: 100%;
+      border-bottom: 1px solid #bebebe;
+    }
+    ul {
+      font-weight: normal;
+    }
+  }
+}
