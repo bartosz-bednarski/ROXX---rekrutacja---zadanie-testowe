@@ -35,7 +35,7 @@ a {
   width: 100%;
   height: 100vh;
   padding: 0;
-  background: url(/images/fs/slider1@2x.png);
+  background: url(../images/fs/slider1@2x.png);
   background-repeat: no-repeat;
   background-size: 100% 100vh;
   -webkit-animation: slideShow 20s infinite;
@@ -45,22 +45,22 @@ a {
 
 @-webkit-keyframes slideShow {
   0% {
-    background: url(/images/fs/slider1@2x.png);
+    background: url(../images/fs/slider1@2x.png);
     background-repeat: no-repeat;
     background-size: 100% 100vh;
   }
   30% {
-    background: url(/images/fs/slider2.jpg);
+    background: url(../images/fs/slider2.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100vh;
   }
   60% {
-    background: url(/images/fs/slider3.jpg);
+    background: url(../images/fs/slider3.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100vh;
   }
   100% {
-    background: url(/images/fs/slider1@2x.png);
+    background: url(../images/fs/slider1@2x.png);
     background-repeat: no-repeat;
     background-size: 100% 100vh;
   }
@@ -68,22 +68,22 @@ a {
 
 @keyframes slideShow {
   0% {
-    background: url(/images/fs/slider1@2x.png);
+    background: url(../images/fs/slider1@2x.png);
     background-repeat: no-repeat;
     background-size: 100% 100vh;
   }
   30% {
-    background: url(/images/fs/slider2.jpg);
+    background: url(../images/fs/slider2.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100vh;
   }
   60% {
-    background: url(/images/fs/slider3.jpg);
+    background: url(../images/fs/slider3.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100vh;
   }
   100% {
-    background: url(/images/fs/slider1@2x.png);
+    background: url(../images/fs/slider1@2x.png);
     background-repeat: no-repeat;
     background-size: 100% 100vh;
   }
@@ -440,7 +440,7 @@ a {
 .gallery {
   width: 100%;
   height: 65vh;
-  background: url(/images/fs/d_gallery@2x.png);
+  background: url(../images/fs/d_gallery@2x.png);
   background-repeat: no-repeat;
   background-size: 100% 65vh;
 }
@@ -630,7 +630,7 @@ a {
 
 @media only screen and (max-width: 600px) {
   .slider-1 {
-    background: url(/images/mobile/slider1@2x.png);
+    background: url(../images/mobile/slider1@2x.png);
     background-size: 100% auto;
     -webkit-animation: slideShow 20s infinite;
             animation: slideShow 20s infinite;
@@ -638,44 +638,44 @@ a {
   }
   @-webkit-keyframes slideShow {
     0% {
-      background: url(/images/mobile/slider1@2x.png);
+      background: url(../images/mobile/slider1@2x.png);
       background-repeat: no-repeat;
       background-size: 100% 100vh;
     }
     30% {
-      background: url(/images/mobile/slider2.jpg);
+      background: url(../images/mobile/slider2.jpg);
       background-repeat: no-repeat;
       background-size: 100% 100vh;
     }
     60% {
-      background: url(/images/mobile/slider3.jpg);
+      background: url(../images/mobile/slider3.jpg);
       background-repeat: no-repeat;
       background-size: 100% 100vh;
     }
     100% {
-      background: url(/images/mobile/slider1@2x.png);
+      background: url(../images/mobile/slider1@2x.png);
       background-repeat: no-repeat;
       background-size: 100% 100vh;
     }
   }
   @keyframes slideShow {
     0% {
-      background: url(/images/mobile/slider1@2x.png);
+      background: url(../images/mobile/slider1@2x.png);
       background-repeat: no-repeat;
       background-size: 100% 100vh;
     }
     30% {
-      background: url(/images/mobile/slider2.jpg);
+      background: url(../images/mobile/slider2.jpg);
       background-repeat: no-repeat;
       background-size: 100% 100vh;
     }
     60% {
-      background: url(/images/mobile/slider3.jpg);
+      background: url(../images/mobile/slider3.jpg);
       background-repeat: no-repeat;
       background-size: 100% 100vh;
     }
     100% {
-      background: url(/images/mobile/slider1@2x.png);
+      background: url(../images/mobile/slider1@2x.png);
       background-repeat: no-repeat;
       background-size: 100% 100vh;
     }
@@ -853,7 +853,7 @@ a {
   .gallery {
     width: 100%;
     height: 65vh;
-    background: url(/images/mobile/Group\ 57@2x.png);
+    background: url(../images/mobile/Group\ 57@2x.png);
     background-repeat: no-repeat;
     background-size: 100% 65vh;
   }
